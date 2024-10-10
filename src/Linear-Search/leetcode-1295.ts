@@ -1,13 +1,20 @@
 /*
-    Q: Find Numbers with Even Number of Digits
-    Given an array nums of integers, return how many of them contain an even number of digits.
+    Q: 1295. Find Numbers with Even Number of Digits
+
+    Description:
+        Given an array nums of integers, return how many of them contain an even number of digits.
+
+    Example 1:
+        Input: nums = [555,901,482,1771]
+        Output: 1 
+        Explanation: 
+        Only 1771 contains an even number of digits.
 */
 
 function findNumbers(nums: number[]): number {
   let count = 0;
   
   for(let i = 0; i < nums.length; i++) {
-    /* Logic 1 */
     if (countDigits(nums[i]) % 2 === 0) {
         count += 1;
     }
