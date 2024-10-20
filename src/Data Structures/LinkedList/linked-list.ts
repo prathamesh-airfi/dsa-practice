@@ -1,4 +1,4 @@
-class _Node<T> {
+export class _Node<T> {
   constructor(private value: T, private next: _Node<T> | null = null) {}
 
   getValue(): T {
